@@ -67,9 +67,8 @@ header {
 }
 
 .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    text-align: center;
     margin-top: 16px;
 }
 
@@ -139,8 +138,8 @@ h3 {
 }
 
 .life-outside-classroom-box ul {
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 30px;
+    display: grid;
     justify-content: center;
     gap: 8px;
 }
@@ -200,6 +199,7 @@ footer a {
 .first-gen-news-list ul {
     display: flex;
     flex-direction: row;
+    /* I want them to be displayed horizontally. So no grid here. Flex is easier. */
 }
 
 .first-gen-news-list ul li a {
