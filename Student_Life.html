@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <a href = "#main-content">Skip to Main Content</a>
+    <a href = "#main-content" class="skip-link">Skip to Main Content</a>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href ="index.html">Home</a></li>
                 <li><a href ="Food_Pantry.html">Food Pantry</a></li>
@@ -18,37 +18,46 @@
                 <li><a href="First_Gen.html">First Gen</a></li>
             </ul>
         </nav>
-        <h1>Student Life</h1>
         <hr>
+        <h1>Student Life</h1>
     </header>
     <main id="main-content">
         <h2>Basic Needs</h2>
         <p>Striving for fair and equitable access to food and other basic resources</p>
 
         <h3>Resources By Category</h3>
-
-        <img src="./images/criticalincident.jpg" alt="criticalincident">
-        <h4>Critical Incident Support & Conflict Management</h4>
-        <p>Support for students who are experiencing or have been impacted by a conflict or critical incident.</p>
-
-        <img src="./images/finance.jpg" alt="finance momey">
-        <h4>Finance</h4>
-        <p>Financial resources to help with immediate and long-term needs, such as emergencies, college funding and employment.</p>
-
-        <img src="./images/food.jpg" alt="food cooking">
-        <h4>Food</h4>
-        <p>Services to help students maintain healthy habits, find access to food, and seek assistance when struggling to buy food.</p>
-
-        <img src="./images/healthcare-1.jpg" alt="healthcare indoor">
-        <h4>Health Care</h4>
-        <p>Support for students seeking medical, dental or mental health treatment, including resources for securing health insurance and finding care providers.</p>
-
-        <img src="./images/housingtransportation.jpg" alt="Transportation Station">
-        <h4>Housing & Transportation</h4>
-        <p>Campus and community resources for securing housing, accessing transportation, and seeking assistance for a variety of housing needs.</p>
-
-        <h4><a href="https://basicneeds.studentlife.umich.edu/resources"><ins>View all resources</ins></a></h4>
-
+        <div class="resources-category-list">
+            <ul>
+                <li>
+                    <div class="img-size">
+                        <img src="./images/criticalincident.jpg" alt="criticalincident">
+                    </div>
+                    <h4>Critical Incident Support & Conflict Management</h4>
+                    <p>Support for students who are experiencing or have been impacted by a conflict or critical incident.</p>
+                </li>
+                <li>
+                    <div class="img-size">
+                        <img src="./images/finance.jpg" alt="finance momey">
+                    </div>
+                    <h4>Finance</h4>
+                    <p>Financial resources to help with immediate and long-term needs, such as emergencies, college funding and employment.</p>
+                </li>
+                <li>
+                    <div class="img-size">
+                        <img src="./images/healthcare-1.jpg" alt="healthcare indoor">
+                    </div>
+                    <h4>Health Care</h4>
+                    <p>Support for students seeking medical, dental or mental health treatment, including resources for securing health insurance and finding care providers.</p>
+                </li>
+                <li>
+                    <div class="img-size">
+                        <img src="./images/housingtransportation.jpg" alt="Transportation Station">
+                    </div>
+                    <h4>Housing & Transportation</h4>
+                    <p>Campus and community resources for securing housing, accessing transportation, and seeking assistance for a variety of housing needs.</p>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <footer>

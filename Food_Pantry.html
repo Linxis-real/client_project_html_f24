@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <a href = "#main-content">Skip to Main Content</a>
+    <a href = "#main-content" class="skip-link" >Skip to Main Content</a>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href ="index.html">Home</a></li>
                 <li><a href ="Food_Pantry.html">Food Pantry</a></li>
@@ -18,13 +18,14 @@
                 <li><a href="First_Gen.html">First Gen</a></li>
             </ul>
         </nav>
-        <h1>Food Pantry</h1>
         <hr>
+        <h1>Food Pantry</h1>
+
     </header>
     <main id="main-content">
         <div>
             <h2>WELCOME TO MAIZE & BLUE CUPBOARD</h2>
-            <img src="./images/grocerybag.png" alt="grocerybag">
+            <img class="welcome-img" src="./images/grocerybag.png" alt="grocerybag">
             <h3>OUR MISSION</h3>
             <p>
                 To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.
@@ -32,68 +33,71 @@
         </div>
 
 
-        <div>
-            <h3 class="Section_heading">WHO WE ARE</h3>
+        <div class="who-we-are">
+            <br>
+            <h3>WHO WE ARE</h3>
             <p>
                 College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard is here to provide an immediate and comprehensive response for the U-M community. By offering resources, educational opportunities, compassionate support and more, we help students develop the skills to make informed decisions.
             </p>
 
-            <p>
+            <p class="Read">
                 Read our <a href="https://mbc.studentlife.umich.edu/faq/">FAQs</a> to learn more about the Maize and Blue Cupboard and how you can get help.
             </p>
 
-            <img src="./images/Food_Who_we_are (2).jpg" alt="We are Maize & Blue">
-
+            <img class="who-we-are-img" src="./images/Food_Who_we_are (2).jpg" alt="We are Maize & Blue">
         </div>
         <div>
-            <h3 class="Section_heading">WHAT WE PROVIDE</h3>
-            <h4>FOOD</h4>
-            <img src="./images/food.png" alt="Food icon">
-            <p>
-                Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)
-            </p>
-            <h4>KITCHEN & COOKING</h4>
-            <img src="./images/kitchen.png" alt="kitchen icon">
-            <p>
-                Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware
-            </p>
-            <h4>PERSONAL & HOUSEHOLD</h4>
-            <img src="./images/personal and household.png" alt="Personal&Household icon">
-            <p>
-                Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more
-            </p>
-            <h4>SUPPORT</h4>
-            <img src="./images/support.png" alt="support icon">
-            <p>
-                Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan’s food program)
-            </p>
-
-        </div>
-        <div>
-            <h3 class="Section_heading">Location</h3>
-            <p>
-                Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access.
-
-                <p>Address: <ins>420 S State St Ann Arbor, MI 48109</ins></p>
-                <p>Phone: <ins>734-936-2794</ins></p>
-            </p>
-        </div>
-        <div>
-            <h3 class="Section_heading">Hours</h3>
-            <p>
-                On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only. Schedule your shopping appointment <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments">here</a>.
-            </p>
-
-            <a href="https://mbc.studentlife.umich.edu/contact/">Contact Us</a>
-        </div>
-
-        <div>
-            <h3 class="Section_heading">Donate</h3>
-            <p><a href="https://mbc.studentlife.umich.edu/how-to-help/"><ins>Choose How You'd Like To Help!</ins></a></p>
+            <div class="provided-resource-grid">
+                <h3>WHAT WE PROVIDE</h3>
+                <ul>
+                    <li>
+                        <h4>FOOD</h4>
+                        <img src="./images/food.png" alt="Food icon">
+                        <p>
+                            Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)
+                        </p>
+                    </li>
+                    <li>
+                        <h4>KITCHEN & COOKING</h4>
+                        <img src="./images/kitchen.png" alt="kitchen icon">
+                        <p>
+                            Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware
+                        </p>
+                    </li>
+                    <li>
+                        <h4>PERSONAL & HOUSEHOLD</h4>
+                        <img src="./images/personal and household.png" alt="Personal&Household icon">
+                        <p>
+                            Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more
+                        </p>
+                    </li>
+                    <li>
+                        <h4>PERSONAL & HOUSEHOLD</h4>
+                        <img src="./images/personal and household.png" alt="Personal&Household icon">
+                        <p>
+                            Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more
+                        </p>
+                    </li>
+                    <li>
+                        <h4>SUPPORT</h4>
+                        <img src="./images/support.png" alt="support icon">
+                        <p>
+                            Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan’s food program)
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer>
+        <div class="tons-of-info">
+        <p>Location: Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access.</p>
+        <p>Address: <ins>420 S State St Ann Arbor, MI 48109</ins></p>
+        <p>Phone: <ins>734-936-2794</ins></p>
+        <p>Hours: On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only. <a href="https://calendly.com/mbcappointments/mbc-shopping-appointments">Schedule your shopping appointment here</a>.</p>
+        <p>Donate: <a href="https://mbc.studentlife.umich.edu/how-to-help/"><ins>Choose How You'd Like To Help!</ins></a></p>
         <p>© 2024 The Regents of the University of Michigan | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Maize & Blue Cupboard</a></p>
+        </div>
     </footer>
     
 </body>

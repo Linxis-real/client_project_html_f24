@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <a href ="#main-content">Skip to Main Content</a>
+    <a href ="#main-content" class="skip-link">Skip to Main Content</a>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href ="index.html">Home</a></li>
                 <li><a href ="Food_Pantry.html">Food Pantry</a></li>
@@ -18,60 +18,59 @@
                 <li><a href="First_Gen.html">First Gen</a></li>
             </ul>
         </nav>
-        <h1>First Gen Students</h1>
         <hr>
+        <h1>First Gen Students</h1>
     </header>
 
     <main id="main-content">
         <h2>Am I a first-generation college student?</h2>
-        <p><strong>At the University of Michigan, undergraduates and graduate students are considered first-generation college students if neither parent or guardian has completed a 4-year college or university degree.</strong></p>
-        <p>This definition includes students with other family members (siblings, cousins, grandparents, etc.) who have completed a four-year degree. </p>
-
-        <h3>First-Generation Gateway Hours and Location:</h3>
-        <p><strong>Summer Hours: </strong>Monday – Friday 9:00 – 3:00 PM</p>
-        <p><strong>Location:</strong>Third floor of the Student Activities Building in the Office of Academic Multicultural Initiatives. </p>
-        <p><strong>Questions for the First-Gen Gateway Staff? </strong>Email us at firstgeninfo@umich.edu</p>
-        <hr>
-
-        <h3>First-generation student News</h3>
-        <ul>
-            <li>
-                <img src="./images/graduation.jpg" alt="First Gen graduation">
-                <a href="https://firstgen.umich.edu/whos-a-first-gen-student-heres-a-new-look-at-a-complicated-question/">
-                    <h4>Who’s a ‘First-Gen’ Student? Here’s a New Look at a Complicated Question</h4>
-                </a>
-            </li>
-            <li>
-                <img src="./images/firstgens.jpg" alt="First_Gens">
-                <a href="https://firstgen.umich.edu/university-of-michigan-celebrates-first-generation-college-students-during-week-long-events/">
-                    <h4>University of Michigan Celebrates First-Generation College Students During Week-Long Events</h4>
-                </a>
-            </li>
-            <li>
-                <img src="./images/firstgen_dinner.webp" alt="First Gens Dinner">
-                <a href="https://firstgen.umich.edu/first-generation-u-m-students-gather-for-winter-dinner/">
-                    <h4>First-generation U-M students gather for winter dinner</h4>
-                </a>
-            </li>
-        </ul>
         
-        <ul>
-            <li>
-                <h5>EMAIL</h5>
-                <hr>
-                <p>firstgeninfo@umich.edu</p>
-            </li>
-            <li>
-                <h5>ADDRESS</h5>
-                <hr>
-                <p>3009 Student Activities Building
-                    515 E. Jefferson, Ann Arbor, MI</p>
-            </li>
-        </ul>
+        <div class="first-gen-intro">
+            <article>
+                <p><strong>At the University of Michigan, undergraduates and graduate students are considered first-generation college students if neither parent or guardian has completed a 4-year college or university degree.</strong></p>
+                <p>This definition includes students with other family members (siblings, cousins, grandparents, etc.) who have completed a four-year degree. </p>
+            </article>
+        </div>
+
+        <div class="first-gen-gateway">
+            <article>
+                <h3>First-Generation Gateway Hours and Location:</h3>
+                <p><strong>Summer Hours: </strong>Monday – Friday 9:00 – 3:00 PM</p>
+                <p><strong>Location:</strong>Third floor of the Student Activities Building in the Office of Academic Multicultural Initiatives. </p>
+                <p><strong>Questions for the First-Gen Gateway Staff? </strong>Email us at firstgeninfo@umich.edu</p>
+            </article>
+        </div>
+
+        <h2>First-generation student News</h2>
+        <div class="first-gen-news-list">
+            <ul>
+                <li>
+                    <img src="./images/graduation.jpg" alt="First Gen graduation">
+                    <a href="https://firstgen.umich.edu/whos-a-first-gen-student-heres-a-new-look-at-a-complicated-question/">
+                        <h3>Who’s a ‘First-Gen’ Student? Here’s a New Look at a Complicated Question</h3>
+                    </a>
+                </li>
+                <li>
+                    <img src="./images/firstgens.jpg" alt="First_Gens">
+                    <a href="https://firstgen.umich.edu/university-of-michigan-celebrates-first-generation-college-students-during-week-long-events/">
+                        <h3>University of Michigan Celebrates First-Generation College Students During Week-Long Events</h3>
+                    </a>
+                </li>
+                <li>
+                    <img src="./images/firstgen_dinner.webp" alt="First Gens Dinner">
+                    <a href="https://firstgen.umich.edu/first-generation-u-m-students-gather-for-winter-dinner/">
+                        <h3>First-generation U-M students gather for winter dinner</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <footer>
         <p>© 2024 The Regents of the University of Michigan</p>
+        <p>Email: firstgeninfo@umich.edu</p>
+        <p>Address: 3009 Student Activities Building
+            515 E. Jefferson, Ann Arbor, MI</p>
     </footer>
 </body>
 </html>
