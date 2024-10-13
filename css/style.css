@@ -175,11 +175,16 @@ footer a {
     text-decoration: underline;
 }
 
+footer a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
 /* First Gen Page*/
 
 .first-gen-intro, .first-gen-gateway {
     margin: 10px 0;
-    /* If bottom margin exist, the next margin-top will be "eaten". So, I'm adding a padding.*/
+    /* If bottom margin exists, the next margin-top will be "eaten". So, I'm adding a padding.*/
     padding: 10px 0;
 }
 
