@@ -7,11 +7,6 @@
     --highlight-color: #bbcbe7;
     --bgc: rgba(255, 255, 255, 0.1);
 }
-/* reset elements here. The reset file is abit confusing for someone who didn't craft it.*/
-* {
-    box-sizing: border-box;
-    list-style: none;
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -311,6 +306,14 @@ footer a:hover {
 
 .tons-of-info p {
     padding: 10px;
+}
+
+.tons-of-info a {
+    color: var(--primary-text);
+}
+
+.tons-of-info a:hover {
+    color: var(--secondary-bg);
 }
 
 /* Media Queries for larger screens */
