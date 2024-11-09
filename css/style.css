@@ -57,6 +57,12 @@ header {
     transition: background-color 0.3s ease;
 }
 
+.navbar ul li a.current {
+    font-weight: bold;
+    color: var(--highlight-color); /* Highlight color for the current page */
+    border-bottom: 2px solid var(--accent-color); /* Optional underline for emphasis */
+  }
+
 .navbar a:hover, .navbar a:focus {
     background-color: var(--bgc);
 }
@@ -140,13 +146,22 @@ h3 {
 }
 
 .life-outside-classroom-box li {
-    background-color: var(--secondary-bg);
+    background-color: var(--bgc);
     color: var(--primary-text);
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: bold;
     font-size: 14px;
     transition: transform 0.3s;
+}
+
+.life-outside-classroom-box li a {
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+.life-outside-classroom-box li a:hover {
+    text-decoration: none;
+    color: var(--primary-text);
 }
 
 .life-outside-classroom-box li:hover {
@@ -183,23 +198,24 @@ footer a:hover {
     padding: 10px 0;
 }
 
-.first-gen-news-list {
-    margin: 20px 0 0 0;
+.first-gen-news-list ul {
+    display: flex;
+    flex-direction: column; /* Default to vertical layout */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .first-gen-news-list img {
-    max-width: 85%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
     transition: transform 0.5s;
 }
 
 .first-gen-news-list img:hover {
     transform: translateY(-5px);
-}
-
-.first-gen-news-list ul {
-    display: flex;
-    flex-direction: row;
-    /* I want them to be displayed horizontally. So no grid here. Flex is easier. */
 }
 
 .first-gen-news-list ul li a {
@@ -213,7 +229,7 @@ footer a:hover {
 }
 
 .first-gen-news-list ul h3 {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -317,4 +333,154 @@ footer a:hover {
 }
 
 /* Media Queries for larger screens */
+
+@media screen and (min-width: 760px) {
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    /* Homepage */
+    .resource-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .physical_intro {
+        margin: 20px 0 5px 0;
+    }
+
+    .resource-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resource-list p {
+        text-align: center;
+    }
+
+    /* Food Pantry */
+
+    .provided-resource-grid ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+    }
+
+    /* Student Life */
+    .resources-category-list ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* First Gen */
+    .first-gen-news-list {
+        margin: 20px 0 0 0;
+    }
+
+    .first-gen-news-list img {
+        max-width: 85%;
+        transition: transform 0.5s;
+    }
+
+    .first-gen-news-list img:hover {
+        transform: translateY(-5px);
+    }
+
+    .first-gen-news-list ul {
+        display: flex;
+        flex-direction: row;
+        /* I want them to be displayed horizontally. So no grid here. Flex is easier. */
+    }
+
+    .first-gen-news-list ul li a {
+        text-decoration: none;
+        color: var(--primary-text);
+        font-size: 14px;
+    }
+
+    .first-gen-news-list ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .first-gen-news-list ul h3 {
+        font-weight: 400px;
+        font-size: 14px;
+    }
+}
+
+/* 404 Designated Here */
+.error-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.error-section h2 {
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+}
+
+.error-section p {
+    font-size: 18px;
+    color: var(--highlight-color);
+    margin-bottom: 24px;
+}
+
+.error-img {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--primary-text);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: var(--highlight-color);
+}
+
+/* !!404!! Media Query for larger screens */
+@media screen and (min-width: 760px) {
+    .error-section {
+        padding: 60px;
+    }
+
+    .error-section h2 {
+        font-size: 32px;
+    }
+
+    .error-section p {
+        font-size: 20px;
+    }
+
+    .error-img {
+        max-width: 400px;
+    }
+}
+
+/* Motion Reduction */
+
+@media (prefers-reduced-motion: reduce) {
+    .resource-grid article:hover,
+    .resource-list article:hover,
+    .life-outside-classroom-box li:hover,
+    .first-gen-news-list img:hover,
+    .back-home:hover {
+        transform: none;
+    }
+}
+
 /* Media Queries for even larger screens */

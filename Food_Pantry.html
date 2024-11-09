@@ -13,7 +13,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href ="index.html">Home</a></li>
-                <li><a href ="Food_Pantry.html">Food Pantry</a></li>
+                <li><a href ="Food_Pantry.html" class="current">Food Pantry</a></li>
                 <li><a href="Student_Life.html">Student Life</a></li>
                 <li><a href="First_Gen.html">First Gen</a></li>
             </ul>
@@ -47,8 +47,8 @@
             <img class="who-we-are-img" src="./images/Food_Who_we_are (2).jpg" alt="We are Maize & Blue">
         </div>
         <div>
+            <h3>WHAT WE PROVIDE</h3>
             <div class="provided-resource-grid">
-                <h3>WHAT WE PROVIDE</h3>
                 <ul>
                     <li>
                         <h4>FOOD</h4>
@@ -99,10 +99,12 @@
         <div>
         <a href="https://studentlife.umich.edu/"><img src="./images/student life.png" alt="Student Life logo"></a>
         <p>Donate: <a href="https://mbc.studentlife.umich.edu/how-to-help/"><ins>Choose How You'd Like To Help!</ins></a></p>
-        <p>© 2024 The Regents of the University of Michigan | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Maize & Blue Cupboard</a></p>
+        <p>© Copyrights <span id="year"></span> The Regents of the University of Michigan | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">Maize & Blue Cupboard</a></p>
         </div>
     </footer>
-    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

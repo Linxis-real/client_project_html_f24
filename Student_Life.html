@@ -14,7 +14,7 @@
             <ul>
                 <li><a href ="index.html">Home</a></li>
                 <li><a href ="Food_Pantry.html">Food Pantry</a></li>
-                <li><a href="Student_Life.html">Student Life</a></li>
+                <li><a href="Student_Life.html" class="current">Student Life</a></li>
                 <li><a href="First_Gen.html">First Gen</a></li>
             </ul>
         </nav>
@@ -63,9 +63,12 @@
     <footer>
         <a href="https://studentlife.umich.edu/"><img src="./images/student life.png" alt="Student Life logo"></a>
         <p>University Housing is a unit of Student Life, and an equal opportunity educator and employer.</p>
-        <p>Copyright © 2024 The Regents of the University of Michigan</p>
+        <p>Copyright © Copyrights <span id="year"></span> The Regents of the University of Michigan</p>
         <p>Reach Out! <a href="umsi.academicsuccess@umich.edu">Contact Us</a></p>
     </footer>
-
+    <script>
+        // To get year in a dynamic way. Don't have to come back another year to type it in.
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

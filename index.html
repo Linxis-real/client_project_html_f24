@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
                 <li><a href="Food_Pantry.html">Food Pantry</a></li>
                 <li><a href="Student_Life.html">Student Life</a></li>
                 <li><a href="First_Gen.html">First Gen</a></li>
@@ -40,7 +40,9 @@
         </section>
         <section class="physical-health">
             <h2>Physical Health</h2>
-            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
+            <div class="physical_intro">
+                <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
+            </div>
             <div class="resource-grid">
                 <article>
                     <h3>University Health Service (UHS)</h3>
@@ -81,17 +83,22 @@
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
             <div class="life-outside-classroom-box">
                 <ul>
-                    <li>Student Organizations</li>
-                    <li>Arts and Culture</li>
-                    <li>Career Services</li>
-                    <li>Housing and Dining</li>
+                    <li><a href="404.html">Student Organizations</a></li>
+                    <li><a href="404.html">Arts and Culture</a></li>
+                    <li><a href="404.html">Career Services</a></li>
+                    <li><a href="404.html">Housing and Dining</a></li>
                 </ul>
             </div>
         </section>
     </main>
     <footer>
-        <p>MSI Academic Advising © 2024 | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <a href="https://studentlife.umich.edu/"><img src="./images/student life.png" alt="Student Life logo"></a>
+        <p>MSI Academic Advising © Copyrights <span id="year"></span> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
         <p>Reach Out! <a href="umsi.academicsuccess@umich.edu">Contact Us</a></p>
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
