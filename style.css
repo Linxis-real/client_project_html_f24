@@ -1,0 +1,486 @@
+/* Color variables for future quicker access. */
+:root {
+    --primary-bg: #02193a;
+    --primary-text: #ffffff;
+    --secondary-bg: #366b47;
+    --accent-color: #3172b1;
+    --highlight-color: #cfddf5;
+    --bgc: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--secondary-bg);
+    color: var(--primary-text);
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+header {
+    background-color: var(--secondary-bg);
+    padding: 16px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.navbar a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a.current {
+    font-weight: bold;
+    color: var(--highlight-color); /* Highlight color for the current page */
+    border-bottom: 2px solid var(--accent-color); /* Optional underline for emphasis */
+  }
+
+.navbar a:hover, .navbar a:focus {
+    background-color: var(--bgc);
+}
+
+.header-content {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.umich-logo {
+    max-width: 150px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--highlight-color);
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    padding: 16px;
+}
+
+#main-content ul li {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--highlight-color);
+    text-align: center;
+}
+
+.resource-grid, .resource-list {
+    display: grid;
+    gap: 20px;
+}
+
+.resource-grid article, .resource-list article {
+    background-color: var(--bgc);
+    margin: 10px 0 0 0;
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.resource-grid article:hover, .resource-list article:hover {
+    transform: translateY(-5px);
+    border: 1px solid #ffffff;
+}
+
+.resource-grid img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.life-outside-classroom-box ul {
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 8px;
+}
+
+.life-outside-classroom-box li {
+    background-color: var(--bgc);
+    color: var(--primary-text);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.life-outside-classroom-box li a {
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+.life-outside-classroom-box li a:hover {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+.life-outside-classroom-box li:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+.mental-health .resource-list {
+    margin: 10px 0;
+}
+
+footer a {
+    color: var(--primary-text);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* First Gen Page*/
+
+.first-gen-intro, .first-gen-gateway {
+    margin: 10px 0;
+    /* If bottom margin exists, the next margin-top will be "eaten". So, I'm adding a padding.*/
+    padding: 10px 0;
+}
+
+.first-gen-news-list ul {
+    display: flex;
+    flex-direction: column; /* Default to vertical layout */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.first-gen-news-list img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: transform 0.5s;
+}
+
+.first-gen-news-list img:hover {
+    transform: translateY(-5px);
+}
+
+.first-gen-news-list ul li a {
+    text-decoration: none;
+    color: var(--primary-text);
+    font-size: 14px;
+}
+
+.first-gen-news-list ul li a:hover {
+    text-decoration: underline;
+}
+
+.first-gen-news-list ul h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Student Life Page */
+
+.resources-category-list {
+    margin: 10px 0 0 0;
+    color: var(--primary-text);
+}
+
+.resources-category-list h4 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.resources-category-list .img-size {
+    width: 100%;
+}
+
+.resources-category-list img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.resources-category-list ul {
+    display: grid;
+    gap: 40px;
+}
+
+.resources-category-list ul li {
+    background-color: var(--bgc);
+    margin: 10px 0 0 0;
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.resources-category-list ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* Food Pantry */
+
+.welcome-img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.who-we-are .Read a {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
+
+.who-we-are .Read a:hover {
+    color: var(--secondary-bg);
+}
+
+.who-we-are-img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.provided-resource-grid {
+    margin: 20px 0 0 0;
+}
+
+.provided-resource-grid ul {
+    display: grid;
+    gap: 40px;
+    margin: 10px 0 0 0;
+}
+
+.provided-resource-grid ul li {
+    background-color: var(--bgc);
+    margin: 10px 0 0 0;
+    padding: 16px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.provided-resource-grid ul li:hover {
+    transform: translateY(-5px);
+}
+
+.provided-resource-grid ul h4 {
+    font-weight: 700;
+}
+
+.tons-of-info p {
+    padding: 10px;
+}
+
+.tons-of-info a {
+    color: var(--primary-text);
+}
+
+.tons-of-info a:hover {
+    color: var(--secondary-bg);
+}
+
+/* Media Queries for larger screens */
+
+@media screen and (min-width: 760px) {
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    /* Homepage */
+    .resource-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .physical_intro {
+        margin: 20px 0 5px 0;
+    }
+
+    .resource-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resource-list p {
+        text-align: center;
+    }
+
+    /* Food Pantry */
+
+    .provided-resource-grid ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+    }
+
+    /* Student Life */
+    .resources-category-list ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* First Gen */
+    .first-gen-news-list {
+        margin: 20px 0 0 0;
+    }
+
+    .first-gen-news-list img {
+        max-width: 85%;
+        transition: transform 0.5s;
+    }
+
+    .first-gen-news-list img:hover {
+        transform: translateY(-5px);
+    }
+
+    .first-gen-news-list ul {
+        display: flex;
+        flex-direction: row;
+        /* I want them to be displayed horizontally. So no grid here. Flex is easier. */
+    }
+
+    .first-gen-news-list ul li a {
+        text-decoration: none;
+        color: var(--primary-text);
+        font-size: 14px;
+    }
+
+    .first-gen-news-list ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .first-gen-news-list ul h3 {
+        font-weight: 400px;
+        font-size: 14px;
+    }
+}
+
+/* 404 Designated Here */
+.error-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.error-section h2 {
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+}
+
+.error-section p {
+    font-size: 18px;
+    color: var(--highlight-color);
+    margin-bottom: 24px;
+}
+
+.error-img {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--primary-text);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+    background-color: var(--highlight-color);
+}
+
+/* !!404!! Media Query for larger screens */
+@media screen and (min-width: 760px) {
+    .error-section {
+        padding: 60px;
+    }
+
+    .error-section h2 {
+        font-size: 32px;
+    }
+
+    .error-section p {
+        font-size: 20px;
+    }
+
+    .error-img {
+        max-width: 400px;
+    }
+}
+
+/* Motion Reduction */
+
+@media (prefers-reduced-motion: reduce) {
+    .resource-grid article:hover,
+    .resource-list article:hover,
+    .life-outside-classroom-box li:hover,
+    .first-gen-news-list img:hover,
+    .back-home:hover {
+        transform: none;
+    }
+}
+
+/* Media Queries for even larger screens */
