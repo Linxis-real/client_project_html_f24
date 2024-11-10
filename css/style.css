@@ -60,7 +60,7 @@ header {
 .navbar ul li a.current {
     font-weight: bold;
     color: var(--highlight-color); /* Highlight color for the current page */
-    border-bottom: 2px solid var(--accent-color); /* Optional underline for emphasis */
+    border-bottom: 2px solid var(--accent-color); /* underline for emphasis */
   }
 
 .navbar a:hover, .navbar a:focus {
@@ -159,6 +159,7 @@ h3 {
     text-decoration: none;
     color: var(--highlight-color);
 }
+
 .life-outside-classroom-box li a:hover {
     text-decoration: none;
     color: var(--primary-text);
@@ -190,17 +191,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* First Gen Page*/
+/* First Gen Page */
 
 .first-gen-intro, .first-gen-gateway {
     margin: 10px 0;
-    /* If bottom margin exists, the next margin-top will be "eaten". So, I'm adding a padding.*/
     padding: 10px 0;
 }
 
 .first-gen-news-list ul {
     display: flex;
-    flex-direction: column; /* Default to vertical layout */
+    flex-direction: column;
     gap: 20px;
     list-style: none;
     padding: 0;
@@ -394,22 +394,33 @@ footer a:hover {
     .first-gen-news-list ul {
         display: flex;
         flex-direction: row;
-        /* I want them to be displayed horizontally. So no grid here. Flex is easier. */
     }
 
     .first-gen-news-list ul li a {
         text-decoration: none;
         color: var(--primary-text);
-        font-size: 14px;
-    }
-
-    .first-gen-news-list ul li a:hover {
-        text-decoration: underline;
+        font-size: 16px;
     }
 
     .first-gen-news-list ul h3 {
-        font-weight: 400px;
-        font-size: 14px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .resources-category-list h4 {
+        font-size: 24px;
     }
 }
 
